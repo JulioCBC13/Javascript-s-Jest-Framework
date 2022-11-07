@@ -12,6 +12,7 @@ test("4.2 dollar should be 537.18", function(){
     const { fromDollarToYen } = require('./app.js')
     
     // hago mi comparacion (la prueba)
+    // le agregue esos "000" por que si no, el test me daba error, la calculadora lo redondea pero java no
     expect(fromDollarToYen(4.2)).toBe(537.1800000000001); //4.2 euro son 1.2 dolares, entonces 3.5 euros deberian ser = (4.2 * 127.9)
 })
 
